@@ -1,0 +1,17 @@
+@import "./color.scss";
+
+html, body {
+  margin: 0;
+  background-color: $white;
+}
+
+html {
+    font-size: 0.875rem;
+    color: $font_color !important;
+}
+
+@function px2rem($px){
+    $rem : 37.5px;
+    @return ($px/$rem) + rem;
+}
+
